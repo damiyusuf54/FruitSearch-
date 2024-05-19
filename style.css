@@ -1,0 +1,70 @@
+* {
+  /* box-sizing: border-box; */
+}
+
+:focus {
+ 
+} 
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #fbb03b, #ff3300);
+}
+
+input {
+ /* TODO */
+}
+
+.search-container {
+  width: 300px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.suggestions li:hover,
+.suggestions li.highlight {
+  background: orangered;
+}
+
+.search-container input,
+.search-container .suggestions {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+}
+.search-container input {
+ background-color: #fbb03b;
+}
+.search-container .suggestions {
+   border-style: outset;
+   color: black;
+   background-color: #f28c55;
+}
+
+ul {
+  /* TODO */
+}
+ul.has-suggestions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  /* TODO */
+}
+ul li:hover {
+  padding: 10px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  width: calc(100% - 60px); /* Adjusting the width to accommodate the button */
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px; /* Rounded corners for the search input */
+  outline: none;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+}
