@@ -1,6 +1,3 @@
-* {
-  /* box-sizing: border-box; */
-}
 
 :focus {
  
@@ -13,9 +10,7 @@ body {
   background: linear-gradient(to right, #fbb03b, #ff3300);
 }
 
-input {
- /* TODO */
-}
+
 
 .search-container {
   width: 300px;
@@ -31,37 +26,36 @@ input {
 .search-container input,
 .search-container .suggestions {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: large;
+  font-size: medium;
+  list-style-type: none;
 }
 .search-container input {
  background-color: #fbb03b;
+ background: linear-gradient(to right, #fbb03b, #ff3300);
 }
 .search-container .suggestions {
-   border-style: outset;
+   border-style: none;
    color: black;
    background-color: #f28c55;
 }
 
-ul {
-  /* TODO */
-}
-ul.has-suggestions {
-  list-style: none;
+
+.suggestions ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
-ul li {
-  /* TODO */
-}
+
+
 ul li:hover {
   padding: 10px;
   cursor: pointer;
 }
 
 input[type="text"] {
-  width: calc(100% - 60px); /* Adjusting the width to accommodate the button */
+   list-style-type: none;
   padding: 10px;
-  box-sizing: border-box;
+  box-sizing: none;
   font-size: 16px;
   border: none;
   border-radius: 20px; /* Rounded corners for the search input */
